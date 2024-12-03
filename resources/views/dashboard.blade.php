@@ -63,7 +63,7 @@
                                     @method('PUT')
                                     <button type="submit" class="text-blue-500 hover:underline">Editar</button>
                                 </form>
-                                <form action="{{ route('eliminarTarea', $task->id) }}" method="POST" class="inline-block">
+                                <form action="{{ route('eliminarTarea', $task->id_task) }}" method="POST" class="inline-block">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="text-red-500 hover:underline">Eliminar</button>
